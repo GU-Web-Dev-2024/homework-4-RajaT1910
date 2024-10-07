@@ -1,0 +1,83 @@
+/* Body Styling */
+body {
+    font-family: 'Brush Script MT', cursive; /* A cursive font that is websafe */
+    background-color: #2a2a2a; 
+    color: #fff; 
+    text-align: center; 
+    background-image: url('images/halloween-background.jpg'); 
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+
+/* Header Styling */
+header {
+    padding: 20px; 
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+/* Main Heading Styling */
+h1 {
+    color: #ff7518; 
+    font-size: 3rem; 
+}
+
+/* Main Section Padding */
+main {
+    padding: 20px; 
+}
+
+/* Candy Collection Section */
+.candy-collection {
+    display: flex; /* Using flexbox for layout */
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+/* Individual Candy Box Styling */
+.candy-box {
+    background-color: rgba(255, 117, 24, 0.8); 
+    border: 2px solid #6b37cb; 
+    padding: 20px; 
+    width: 200px; 
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Image inside Candy Box */
+.candy-box img {
+    width: 100%; 
+    height: auto; 
+    mix-blend-mode: multiply; 
+}
+
+/* Candy Name Styling */
+.candy-box p {
+    margin-top: 10px; 
+    font-size: 1.2rem; 
+    color: #000; 
+}
+
+/* Hover Effect for Candy Boxes */
+.candy-box:hover {
+    background-color: rgba(111, 66, 193, 0.8); /* Changes background color on hover to a purple shade */
+    transform: scale(1.1); 
+    animation-name: bounce; /* Applies the bounce animation on hover */
+    animation-duration: 0.5s; /* Duration of each bounce */
+    animation-delay: 2s; /* Delay before the bounce starts */
+    animation-iteration-count: 3; /* Bounces 3 times when hovered */
+}
+
+/* Footer Styling */
+footer {
+    padding: 20px; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #ff7518; 
+}
+
+/* Keyframes for Bounce Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 
+    40% { transform: translateY(-30px); } 
+    60% { transform: translateY(-15px); } 
+}
